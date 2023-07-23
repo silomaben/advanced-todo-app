@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="add-task">
+            
+            <form id="task-form">
+                <div>
+                    <input type="checkbox" id="checkbox">
+                    <input type="text" id="title" placeholder="task title">
+                </div>
+                <input type="text" id="description" placeholder="task description">
+                <input type="date" id="deadline" placeholder="task deadline">
+                <input type="submit" value="Submit">
+            </form>
+            
+        </div>
+        <div class="view-tasks">
+
+            <div class="nav-lower">
+                <div class="items_left">0 items left</div>
+
+                <div class="controls">
+                    <button id="btn-all">All</button>
+                    <button id="btn-active">Active</button>
+                    <button id="btn-complete">Complete</button>
+                </div>
+
+                <div><button id="btn-clear">Clear Completed</button></div>
+        </div>
+        </div>
+    </div>
+    <script src="ben.js"></script>
+</body>
+</html>
