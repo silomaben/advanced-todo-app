@@ -38,9 +38,9 @@ body {
     background-color: #d0cef2;
     justify-content: center;
     padding: 20px;
-    /* Optionally, you can center the container horizontally as well */
-    /* justify-content: center; */
-    /* align-items: center; */
+    border-radius: 10px;
+    box-shadow: 6px 10px 5px #818187;
+    
 }
 
 
@@ -63,6 +63,8 @@ form #checkbox{
     background-color: #212c45;
     position: relative;
     padding: 8px;
+    border-radius: 10px;
+    box-shadow: 6px 10px 5px #818187;
 
 }
 
@@ -82,7 +84,9 @@ form #checkbox{
     width: 100%;
     
 }
-
+.task-list-container{
+    
+}
 .new-task{
     color: #212c45;
     display: flex;
@@ -142,7 +146,6 @@ form #checkbox{
     .container {
         
         flex-direction: column;
-        /* justify-content: center; */
         width: 100%;
         gap: 30px;
         align-items: center;
@@ -156,7 +159,6 @@ form #checkbox{
         width: 80%;
         background-color: #d0cef2;
         justify-content: center;
-        /* padding: 20px; */
        
     }
 

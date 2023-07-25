@@ -163,6 +163,14 @@ let taskList = [];
   
       const taskDeadline = document.createElement("p");
       taskDeadline.textContent = `Deadline: ${task.task_deadline}`;
+
+      if (task instanceof CompletedTodo){
+        if(task.late==1){
+          taskDeadline.textContent = `completed ${task.late} day ${task.howlate}`;
+        } else {
+          taskDeadline.textContent = `completed ${task.late} days ${task.howlate}`;
+        }
+      }
   
       const taskCompleted = document.createElement("input");
       taskCompleted.type = "checkbox";
